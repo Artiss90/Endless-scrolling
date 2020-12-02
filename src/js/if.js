@@ -22,11 +22,11 @@ setTimeout(() => {
 infScroll.on('load', (response, path) => {
   console.log(JSON.parse(response));
   console.log(path);
+  // тут по шаблону сделали строку с тегами
+  // потом кинули в фрагмент
+  // фрагмент передали в infScroll.appendItems(фрагмент)
 });
 
-  // тут по шаблну сделали строку с тегами
-  // потом кинули в фрагмент
-  // фрагмент передали в infScroll.appendItems(фоагмент)
 
 const markup = '<p>qweqweqwe</p>';
 const fragment = new DocumentFragment();

@@ -1,7 +1,7 @@
 // https://www.smashingmagazine.com/2018/01/deferring-lazy-loading-intersection-observer-api/
 
-import './js/if';
-// import './js/io';
+// import './js/if';
+import './js/io';
 import articlesTpl from './templates/articles.hbs';
 import NewsApiService from './js/news-service';
 
