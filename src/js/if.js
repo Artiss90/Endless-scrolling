@@ -7,7 +7,7 @@ const infScroll = new InfiniteScroll('.test-container', {
   responseType: 'text',
   history: false,
   path() {
-    //const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${KEY}`;
+    //const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${KEY}`; /*ошибка кроссервера, не исправляемая так как нет доступа к АРI*/
     const url = 'https://api.unsplash.com/photos?client_id=' + unsplashID + '&page=' + this.pageIndex;
     return url;
   },

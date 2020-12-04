@@ -45,7 +45,7 @@ function getRefs() {
 const onEntry = entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting && newsApiService.query !== '') {
-      // console.log('Пора грузить еще статьи' + Date.now());
+      console.log('Пора грузить еще статьи' + Date.now());
       newsApiService.fetchArticles().then(articles => {
         appendArticlesMarkup(articles);
         newsApiService.incrementPage();

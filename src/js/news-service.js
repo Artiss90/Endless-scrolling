@@ -13,6 +13,7 @@ export default class NewsApiService {
   }
 
   fetchArticles() {
+    /* new URLSearchParams - ето спец класc из браузерного АРІ, с преображением параметров, вроде  q=10 вместо q: 10*/
     const searchParams = new URLSearchParams({
       q: this.searchQuery,
       language: 'en',
@@ -20,6 +21,7 @@ export default class NewsApiService {
       page: this.page,
     });
     const url = `${BASE_URL}/everything?${searchParams}`;
+    console.log(searchParams.toString());
     // const url = `${BASE_URL}/everything?q=${this.searchQuery}&language=en&pageSize=10&page=${this.page}`;
 
     return fetch(url, options)
